@@ -1,3 +1,3 @@
-import HelloComponent from './component/simple'
+import INPRouter from './lib/provider'
 
-export { HelloComponent }
+export { INPRouter }
