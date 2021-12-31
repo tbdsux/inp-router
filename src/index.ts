@@ -1,3 +1,4 @@
-import INPRouter from './lib/provider'
+import INPRouter, { useINP } from './lib/provider'
+import RenderRoutes from './lib/render'
 
-export { INPRouter }
+export { INPRouter, RenderRoutes, useINP }

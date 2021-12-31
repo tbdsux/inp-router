@@ -1,3 +1,3 @@
 export interface RouteProps {
-  [key: string]: JSX.Element
+  [key: string]: () => JSX.Element
 }
