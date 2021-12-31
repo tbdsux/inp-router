@@ -15,16 +15,26 @@ interface INPRouterProps {
 }
 interface INPContextProps {
   routes: RouteProps
+
+  /**
+   * The current component route key.
+   */
   current: string
   setCurrent: Dispatch<SetStateAction<string>>
-  navigate: (x: string) => void
+
+  /**
+   * Navigate to component route.
+   * @param {string} key
+   *
+   */
+  navigate: (key: string) => void
 }
 
 const INPContext = createContext<INPContextProps>({
   routes: {},
   current: '',
   setCurrent: () => '',
-  navigate: (x: string) => undefined
+  navigate: (key: string) => undefined
 })
 
 const INPRouter = ({ children, routes, defaultElement }: INPRouterProps) => {
@@ -52,6 +62,9 @@ export const useINPRouterContext = () => {
   return context
 }
 
+/**
+ * Hook for component-routing accessibility.
+ */
 export const useINP = () => {
   const { navigate, current } = useINPRouterContext()
 
