@@ -1,5 +1,6 @@
 .babelrc
 .eslintrc
+.prettierrc
 .eslintignore
 .huskyrc.json
 .lintstagedrc.json
@@ -8,6 +9,7 @@ tsconfig.json
 
 *.tgz
 
+.vscode
 node_modules
 example
 src
