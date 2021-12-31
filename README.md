@@ -1,3 +1,13 @@
-# react-library-template
+# inp-router
 
-A simple starter React Library Template
+Use conditional rendering like a router.
+
+## Install
+
+```sh
+npm install inp-router
+```
+
+##
+
+&copy; 2021 | TheBoringDude | [License](./LICENSE)

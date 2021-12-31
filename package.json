@@ -25,7 +25,7 @@
     "build": "cross-env NODE_ENV=production && rm -rf dist && rollup -c"
   },
   "keywords": [],
-  "author": "",
+  "author": "TheBoringDude (Joshue Abance)",
   "license": "ISC",
   "dependencies": {
     "react": "^17.0.2",
