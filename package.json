@@ -1,7 +1,7 @@
 {
   "name": "inp-router",
   "version": "0.0.1",
-  "description": "",
+  "description": "Use conditional rendering like a router.",
   "main": "./dist/index.js",
   "module": "./dist/index.modern.js",
   "unpkg": "./dist/index.umd.js",
@@ -18,7 +18,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "postinstall": "husky install",
+    "huskyinstall": "husky install",
     "precommit": "lint-staged",
     "prepack": "npm run build",
     "prepublishOnly": "npm run build",
