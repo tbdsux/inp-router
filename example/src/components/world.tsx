@@ -1,13 +1,25 @@
-import { useINP } from 'inp-router'
+import { useINP, Link } from 'inp-router'
+import './style.css'
 
 const WorldComponent = () => {
-  const { navigate } = useINP()
+  const { current } = useINP()
 
   return (
     <div>
       <p>world</p>
 
-      <button onClick={() => navigate('hello')}>return to world</button>
+      <p>{current}</p>
+
+      <Link
+        to="world"
+        className={({ active }) => `${active ? 'current-button' : ''}`}
+      >
+        this is world
+      </Link>
+      
+      <Link to="hello" className="">
+        go to hello
+      </Link>
     </div>
   )
 }
